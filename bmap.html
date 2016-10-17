@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <style type="text/css">
+body, html,#b-map {width: 90%;height: 90%;overflow: hidden;margin:10px auto 0 auto;}
+    </style>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?type=quick&ak=IYogR4PrOzNklhaIAPby3EEq&v=1.0"></script>
+    <title>显示地图</title>
+  </head>
+  <body>
+    <div id="b-map"></div>
+  </body>
+</html>
+<script type="text/javascript">
+var map = new BMap.Map("b-map");
+map.centerAndZoom(new BMap.Point(116.470, 39.926), 14);
+map.enableDragging();
+map.setCenter(new BMap.Point(116.470, 39.926));
+map.panTo(new BMap.Point(116.470, 39.926));
+map.addControl(new BMap.ZoomControl());
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
